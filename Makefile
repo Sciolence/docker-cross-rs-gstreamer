@@ -105,5 +105,5 @@ docker-build:
 
 ## Docker : tag and push image to remote registry
 docker-push:
-	$(eval DOCKER_PUSH_TAGS := $(VCS_HASH) $(DOCKER_PUSH_TAGS))
+	$(eval DOCKER_TAGS := $(VCS_HASH) $(DOCKER_TAGS))
 	$(call docker_push,$(IMAGE))

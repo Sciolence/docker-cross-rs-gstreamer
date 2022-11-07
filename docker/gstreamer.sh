@@ -5,7 +5,7 @@ set -euo pipefail
 
 GSTREAMER_BUILD_DIR="${GSTREAMER_BUILD_DIR:-"/build.gstreamer"}"
 GSTREAMER_REPO="${GSTREAMER_REPO:-"https://gitlab.freedesktop.org/gstreamer/gstreamer.git"}"
-GSTREAMER_BRANCH="${GSTREAMER_BRANCH:-"1.20"}"
+GSTREAMER_BRANCH="${GSTREAMER_BRANCH:-"main"}"
 
 GSTREAMER_CROSS_SYSROOT="${GSTREAMER_CROSS_SYSROOT:-}"
 GSTREAMER_CROSS_ARCH="${GSTREAMER_CROSS_ARCH:-}"
@@ -43,6 +43,7 @@ setup_dependencies() {
       "libgudev-1.0-dev$PACKAGE_SUFFIX" \
       "libjson-glib-dev$PACKAGE_SUFFIX" \
       "libsoup2.4-dev$PACKAGE_SUFFIX" \
+      "libnice-dev$PACKAGE_SUFFIX" \
       "libv4l-dev$PACKAGE_SUFFIX" \
       "v4l-utils$PACKAGE_SUFFIX" \
       "zlib1g-dev$PACKAGE_SUFFIX"
