@@ -1,4 +1,4 @@
-FROM sciolence/cross-rs-custom-aarch64-unknown-linux-gnu:latest
+FROM ghcr.io/cross-rs/aarch64-unknown-linux-gnu:main
 
 ENV DEBIAN_FRONTEND=noninteractive \
     GSTREAMER_CROSS_SYSROOT="/usr/aarch64-linux-gnu" \

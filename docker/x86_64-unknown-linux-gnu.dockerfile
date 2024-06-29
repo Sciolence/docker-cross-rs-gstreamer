@@ -1,4 +1,4 @@
-FROM sciolence/cross-rs-custom-x86_64-unknown-linux-gnu:latest
+FROM ghcr.io/cross-rs/x86_64-unknown-linux-gnu:main
 
 ENV DEBIAN_FRONTEND=noninteractive
 
