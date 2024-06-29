@@ -32,6 +32,7 @@ setup_dependencies() {
       "flex" \
       "bison" \
       "gettext" \
+      "libssl-dev$PACKAGE_SUFFIX" \
       "gir1.2-freedesktop$PACKAGE_SUFFIX" \
       "gir1.2-glib-2.0$PACKAGE_SUFFIX" \
       "libc6-dev$PACKAGE_SUFFIX" \
@@ -86,7 +87,7 @@ make_gstreamer() {
     MESON_CROSS_OPTIONS="--cross-file /build-gstreamer-cross-file.txt"
   fi
 
-  meson build $MESON_CROSS_OPTIONS -Dprefix=/usr $MESON_OPTIONS
+  meson build $MESON_CROSS_OPTIONS --prefix=/usr $MESON_OPTIONS
   ninja -C build
   ninja -C build install
   # DESTDIR=/gstreamer ninja -C build install
