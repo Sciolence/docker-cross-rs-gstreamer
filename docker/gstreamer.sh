@@ -38,6 +38,7 @@ setup_dependencies() {
       "libc6-dev$PACKAGE_SUFFIX" \
       "libavcodec-dev$PACKAGE_SUFFIX" \
       "libavfilter-dev$PACKAGE_SUFFIX" \
+      "libpango1.0-dev$PACKAGE_SUFFIX" \
       "libcap-dev$PACKAGE_SUFFIX" \
       "libglib2.0-dev$PACKAGE_SUFFIX" \
       "libglib2.0-dev-bin$PACKAGE_SUFFIX" \
